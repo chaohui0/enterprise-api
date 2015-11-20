@@ -616,7 +616,7 @@ HTTP Header中必须包含`Api-Key`和`Api-Domain`,其中`Api-Key`为企业超�
 
 `sn`为设备序列号，比如`T0000001`、`T0000007`...，在设备的面贴上可以查看到。
 
-在请求的 `HTTP HEADER`中需要指定查询历史记录中的其实时间`Time-Start`和结束时间 `Time-End`, 该值为UTC时间（秒数），两值之差不能大于7天（60*60*24*7=604800秒），否则会返回`时间间隔溢出错误`(204)
+在请求的 `HTTP HEADER`中需要指定查询历史记录中的起始时间`Time-Start`和结束时间 `Time-End`, 该值为UTC时间（秒数），两值之差不能大于7天（60*60*24*7=604800秒），否则会返回`时间间隔溢出错误`(204)
 
 	REQUEST:
 	GET /company/device/data/history/T0000001
